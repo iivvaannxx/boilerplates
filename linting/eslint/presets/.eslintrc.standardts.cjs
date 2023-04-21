@@ -1,7 +1,6 @@
 // Dependencies: [ 'eslint', 'typescript', 'eslint-config-standard-with-typescript' ]
 // Install peer dependencies if not working. See: https://github.com/standard/eslint-config-standard-with-typescript
 
-
 /** @brief A couple of opinionated adjustments to the StandardTS rules. */
 const preferredRules = {
 
