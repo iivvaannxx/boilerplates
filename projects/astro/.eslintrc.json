@@ -1,0 +1,49 @@
+{
+  "env": {
+
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+
+  "extends": [
+    "standard-with-typescript",
+    "plugin:astro/recommended",
+    "plugin:astro/jsx-a11y-strict",
+    "prettier"
+  ],
+
+  "overrides": [
+
+    {
+      "files": [ "*.astro" ],
+      "parser": "astro-eslint-parser",
+
+      "parserOptions": {
+
+        "parser": "@typescript-eslint/parser",
+        "extraFileExtensions": [ ".astro" ]
+      },
+
+      "rules": {
+
+        "astro/semi": [ "error", "always" ],
+
+        "astro/no-set-html-directive": "error",
+        "astro/no-set-text-directive": "warn",
+        "astro/no-unused-css-selector": "error",
+
+        "astro/jsx-a11y/anchor-ambiguous-text": "error",
+        "astro/jsx-a11y/control-has-associated-label": "error",
+        "astro/jsx-a11y/lang": "error",
+        "astro/jsx-a11y/prefer-tag-over-role": "error"
+      }
+    }
+  ],
+  "parserOptions": {
+
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  }
+}
