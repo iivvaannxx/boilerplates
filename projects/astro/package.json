@@ -1,15 +1,16 @@
 {
-  "name": "ivanporto.io",
+  "name": "astro-project-template",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
     "astro": "astro",
     "build": "astro build",
     "dev": "astro dev",
     "preview": "astro preview",
     "start": "astro dev",
-    "lint": "eslint . | snazzy",
-    "format": "prettier --write ./source"
+    "lint": "eslint . | snazzy && echo '✅ ESLint reported no errors.'",
+    "format": "prettier --write . && echo '✅ Prettier formatted all files.'"
   },
   "dependencies": {
     "astro": "^2.3.3"
